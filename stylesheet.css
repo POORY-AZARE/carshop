@@ -295,3 +295,64 @@ footer {
     width: 100%;
   }
 }
+/* Add your existing CSS styles here */
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links, .language-switcher {
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .nav-links a, .language-switcher a {
+    padding: 5px;
+    display: block; /* Makes each link a block element, thus taking the full width */
+  }
+
+  .special-message {
+    padding: 10px;
+    font-size: 14px; /* Reduces font size for smaller screens */
+  }
+
+  .search-bar {
+    flex-direction: column;
+    width: 100%; /* Makes search bar full width */
+  }
+
+  .search-bar select, .search-bar input, .search-bar button {
+    width: 90%; /* Gives a little margin on the sides */
+    margin: 10px auto; /* Centers the elements */
+  }
+
+  .car-gallery {
+    grid-template-columns: 1fr; /* Changes the grid to a single column */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center; /* Centers the content */
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center; /* Centers the text */
+    margin: 10px 0; /* Adds margin at the top and bottom */
+  }
+
+  .map-container iframe {
+    width: 90%; /* Adjusts the map width to fit the container */
+  }
+}
+
+/* Additional global responsive adjustments */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
