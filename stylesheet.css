@@ -1,0 +1,297 @@
+header {
+  background-image: url("01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 1000px;
+}
+
+body,
+.main-content {
+  background-image: url("02.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #333;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.language-switcher a {
+  color: white;
+  text-decoration: none;
+}
+
+/* New Special Message CSS */
+.special-message {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: #333;
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Add some padding above and below the text */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white; /* White text color */
+  font-size: 18px; /* Adjust the font size as needed */
+  position: relative; /* Positioning relative to its normal position */
+  z-index: 2; /* Ensure it's above the background image */
+}
+
+/* Adjust the search bar CSS as necessary, for example: */
+.search-bar {
+  position: relative; /* Relative positioning */
+  z-index: 1; /* Ensure the search bar is above the background but below the special message */
+  /* Rest of your search bar styles */
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000; /* Adjust the color to match your site */
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 5px; /* Optional for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for shadow */
+  margin: auto;
+  max-width: 800px; /* Adjust based on your layout width */
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  padding: 5px 10px;
+  margin: 20 5px;
+  border: 1px solid #ddd; /* Adjust the color to match your site */
+  border-radius: 5px; /* Optional for rounded corners */
+}
+
+.search-bar button {
+  background-color: #333; /* Adjust the color to match your button */
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Adjust the width of the selects and input based on your design */
+.search-bar select,
+.search-bar input {
+  flex: 1;
+}
+
+/* Additional responsive adjustments may be needed */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar select,
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+.car-description-link {
+  text-decoration: none; /* Removes the underline from links */
+  color: inherit; /* Keeps the color the same as the non-link text */
+  display: block; /* Makes the link fill the entire container for easier clicking */
+}
+
+.car-description-link:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Example hover effect */
+}
+
+.car-gallery {
+  width: 80%;
+  height: auto;
+  display: gray;
+  margin: auto;
+}
+
+.car-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.car-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.car-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.car-description {
+  text-align: center;
+  padding-top: 10px;
+  color: #ddd;
+}
+footer {
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer-rectangle {
+  border: 2px solid #fff;
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.to-top-button {
+  display: inline-block; /* Allows block level properties like margin */
+  background-color: #000; /* Button background color */
+  color: #fff; /* Text color */
+  text-decoration: none; /* Removes underline from links */
+  padding: 10px 20px; /* Padding inside the button */
+  border: 2px solid #fff; /* White border around the button */
+  font-weight: bold; /* Makes the text bold */
+  cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.footer-section {
+  margin: 10px;
+  min-width: 150px; /* Adjust this as needed */
+}
+
+.footer-section.newsletter img {
+  width: 30px; /* Set the width to match the size of other icons */
+  height: auto; /* Keep the height proportional */
+}
+
+.social-links a img {
+  width: 30px; /* Or the size of your social icons */
+  height: auto;
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section,
+  .map-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .to-top-button {
+    margin: 20px auto; /* Center the button with auto margins */
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-links a img {
+    margin: 0 5px;
+  }
+
+  .map-container {
+    order: 4;
+    padding: 0;
+  }
+}
+
+.footer-rectangle {
+  border: 2px solid #fff;
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.to-top {
+  align-self: flex-start;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px; /* Add space below the button */
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start; /* Align the top edges of the sections */
+  flex-wrap: wrap; /* Wrap to next line if not enough space */
+}
+
+.footer-section {
+  margin: 10px;
+  flex-basis: calc(
+    25% - 20px
+  ); /* Allocate space for 4 items taking margins into account */
+  text-align: left;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 750px;
+  align-self: center;
+  margin: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .to-top {
+    text-align: center;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+}
