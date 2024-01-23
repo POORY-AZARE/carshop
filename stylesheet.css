@@ -59,29 +59,27 @@ html {
   text-align: center; /* Center the text */
   padding: 20px 0; /* Add some padding above and below the text */
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  color: white; /* White text color */
-  font-size: 18px; /* Adjust the font size as needed */
+  color: white;
+  font-size: 18px;
   position: relative; /* Positioning relative to its normal position */
   z-index: 2; /* Ensure it's above the background image */
 }
 
-/* Adjust the search bar CSS as necessary, for example: */
 .search-bar {
-  position: relative; /* Relative positioning */
-  z-index: 1; /* Ensure the search bar is above the background but below the special message */
-  /* Rest of your search bar styles */
+  position: relative;
+  z-index: 1;
 }
 
 .search-bar {
   display: flex;
   justify-content: space-between;
-  background-color: #000000; /* Adjust the color to match your site */
+  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 50px;
-  border-radius: 5px; /* Optional for rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for shadow */
+  border-radius: 5px; /*  for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* for shadow */
   margin: auto;
-  max-width: 800px; /* Adjust based on your layout width */
+  max-width: 800px;
 }
 
 .search-bar select,
@@ -89,23 +87,22 @@ html {
 .search-bar button {
   padding: 5px 10px;
   margin: 20 5px;
-  border: 1px solid #ddd; /* Adjust the color to match your site */
-  border-radius: 5px; /* Optional for rounded corners */
+  border: 1px solid #ddd;
+  border-radius: 5px; /* for rounded corners */
 }
 
 .search-bar button {
-  background-color: #333; /* Adjust the color to match your button */
+  background-color: #333;
   color: #fff;
   cursor: pointer;
 }
 
-/* Adjust the width of the selects and input based on your design */
 .search-bar select,
 .search-bar input {
   flex: 1;
 }
 
-/* Additional responsive adjustments may be needed */
+/* Additional responsive  */
 @media (max-width: 768px) {
   .search-bar {
     flex-direction: column;
@@ -125,7 +122,7 @@ html {
 }
 
 .car-description-link:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Example hover effect */
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .car-gallery {
@@ -181,17 +178,17 @@ footer {
 .to-top-button {
   display: inline-block; /* Allows block level properties like margin */
   background-color: #000; /* Button background color */
-  color: #fff; /* Text color */
+  color: #fff;
   text-decoration: none; /* Removes underline from links */
   padding: 10px 20px; /* Padding inside the button */
   border: 2px solid #fff; /* White border around the button */
-  font-weight: bold; /* Makes the text bold */
+  font-weight: bold;
   cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 .footer-section {
   margin: 10px;
-  min-width: 150px; /* Adjust this as needed */
+  min-width: 150px;
 }
 
 .footer-section.newsletter img {
@@ -200,7 +197,7 @@ footer {
 }
 
 .social-links a img {
-  width: 30px; /* Or the size of your social icons */
+  width: 30px; /* size of  social icons */
   height: auto;
   margin: 0 10px;
 }
@@ -256,15 +253,13 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: start; /* Align the top edges of the sections */
-  flex-wrap: wrap; /* Wrap to next line if not enough space */
+  align-items: start;
+  flex-wrap: wrap;
 }
 
 .footer-section {
   margin: 10px;
-  flex-basis: calc(
-    25% - 20px
-  ); /* Allocate space for 4 items taking margins into account */
+  flex-basis: calc(25% - 20px);
   text-align: left;
 }
 
@@ -295,64 +290,65 @@ footer {
     width: 100%;
   }
 }
-/* Add your existing CSS styles here */
 
-/* Mobile responsive adjustments */
+header {
+  /* existing styles */
+  height: auto;
+  min-height: 75vh;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
   }
-
-  .nav-links, .language-switcher {
-    width: 100%;
-    justify-content: center;
-    padding: 5px;
-  }
-
-  .nav-links a, .language-switcher a {
-    padding: 5px;
-    display: block; /* Makes each link a block element, thus taking the full width */
-  }
-
-  .special-message {
-    padding: 10px;
-    font-size: 14px; /* Reduces font size for smaller screens */
-  }
-
-  .search-bar {
+  .nav-links {
     flex-direction: column;
-    width: 100%; /* Makes search bar full width */
   }
-
-  .search-bar select, .search-bar input, .search-bar button {
-    width: 90%; /* Gives a little margin on the sides */
-    margin: 10px auto; /* Centers the elements */
+  .nav-links a {
+    margin: 10px 0; /* add space between links */
   }
+}
 
+@media (max-width: 768px) {
+  .search-bar {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .car-gallery {
-    grid-template-columns: 1fr; /* Changes the grid to a single column */
+    grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    align-items: center; /* Centers the content */
   }
-
-  .footer-section {
-    width: 100%;
-    text-align: center; /* Centers the text */
-    margin: 10px 0; /* Adds margin at the top and bottom */
-  }
-
-  .map-container iframe {
-    width: 90%; /* Adjusts the map width to fit the container */
+  .map-container {
+    width: 90%;
+    margin: 0 auto;
   }
 }
-
-/* Additional global responsive adjustments */
-img {
-  max-width: 100%;
+.map-container {
+  width: 100%;
   height: auto;
+  max-width: 750px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: none;
 }
 
+/* Make the map responsive  */
+.map-container iframe {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    margin: 20px 0;
+  }
+}
